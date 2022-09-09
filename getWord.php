@@ -10,7 +10,7 @@
     
     <?php
 
-        $getWord = $_POST['badWord'];
+        $getWord = trim($_POST['badWord']);
 
         $paragraph = "Canta, o dea, l'ira d'Achille Pelide, rovinosa, che infiniti dolori inflisse agli Achei, gettò in preda all'ade molte vite gagliarde d'eroi, ne fece il bottino dei cani";
 
@@ -18,8 +18,8 @@
 
     ?>
 
-    <p><?php echo $censoredWord?></p>
-    <p>La lunghezza della stringa è: <?php echo strlen($censoredWord)?> caratteri</p>
+    <p><?php echo $censoredWord ?></p>
+    <p>La lunghezza della stringa è: <?php echo strlen($censoredWord) ?> caratteri</p>
 
 </body>
 </html>
